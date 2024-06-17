@@ -375,7 +375,7 @@ p <- p+geom_vline(aes(xintercept=agg_effects$overall.att, color="csa"), linetype
 p <- p+scale_x_continuous(breaks=seq(0,.2,.01))
 p <- p+scale_color_manual(values=c("csa"="red"))
 p <- p+theme_minimal()
-p <- p+labs(x="Aggregated ATT of Castle-doctrine on homicide rates", y="Density")
+p <- p+labs(x="Aggregated ATT of Castle-doctrine on homicide rates", y="Density", title="Posterior distribution of aggregated ATT of Castle-doctrine on homicide rates ")
 
 
 
@@ -388,12 +388,7 @@ f <- ecdf(post.samples$b_Intercept)
 p
 ```
 
-![]([plot](https://github.com/rasmusklokker/staggered-did-bayesian-aggregate/blob/master/staggered-DID-bayesian-aggregate-document_files/figure-html/posterior%20plot-1.png?)
-
-![screenshot](posterior plot-1.png)
-
-
-![image](https://github.com/rasmusklokker/staggered-did-bayesian-aggregate/assets/68444071/ea9de410-b477-42ac-91f5-15178a68448a)
+![](staggered-DID-bayesian-aggregate-document_files/figure-html/posterior plot-1.png)<!-- -->
 
 
 However, what if we had some kind of minimum effect of interest in mind, that we wanted to assess? For instance, what if we considered an increase in homicides of 5% a practically important effect size? Well, we can easily assess the probability of the ATT being 0.05 or higher, as well. In this case, the probability that the Castle-doctrine increased homicide rates of 5% or higher is 93%. What if we thought a 10% increase was the limit of practical importance? The probability that the policy resulted in an increase of homicide rates of 10%, or higher, is then 15%.

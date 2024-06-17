@@ -388,7 +388,7 @@ p <- p+geom_vline(aes(xintercept=agg_effects$overall.att, color="csa"), linetype
 p <- p+scale_x_continuous(breaks=seq(0,.2,.01))
 p <- p+scale_color_manual(values=c("csa"="red"))
 p <- p+theme_minimal()
-p <- p+labs(x="Aggregated ATT of Castle-doctrine on homicide rates", y="Density")
+p <- p+labs(x="Aggregated ATT of Castle-doctrine on homicide rates", y="Density", title="Posterior distribution of aggregated ATT of Castle-doctrine on homicide rates ")
 
 
 
