@@ -198,7 +198,7 @@ knitr::kable(
              CI=c(paste(round(agg_CSA$overall.att-1.96*agg_CSA$overall.se,2), 
                         round(agg_CSA$overall.att+1.96*agg_CSA$overall.se,2), collapse=";"),
                   paste(round(sum_brm$fixed[3],2), round(sum_brm$fixed[4],2), collapse=";"))),
-  caption="<span style='font-size:200%'>Aggregated ATT of simulated data</span>"
+  caption="<span style='font-size:200%'>Aggregated ATT of simulated data</span>", digits=2
   
   
   )
@@ -280,7 +280,7 @@ knitr::kable(
              CI=c(paste(round(agg_effects$overall.att-1.96*agg_effects$overall.se,2), 
                         round(agg_effects$overall.att+1.96*agg_effects$overall.se,2), collapse=";"),
                   paste(round(sum_brm_castle$fixed[3],2), round(sum_brm_castle$fixed[4],2), collapse=";"))),
-  caption="<span style='font-size:200%'>Aggregated ATT of Castle-doctrine on homicide rates</span>"
+  caption="<span style='font-size:200%'>Aggregated ATT of Castle-doctrine on homicide rates</span>", digits=2
   )
 
 
@@ -354,7 +354,7 @@ knitr::kable(
              CI=c(paste(round(agg_mw$overall.att-1.96*agg_mw$overall.se,2), 
                         round(agg_mw$overall.att+1.96*agg_mw$overall.se,2), collapse=";"),
                   paste(round(sum_brm_mw $fixed[3],2), round(sum_brm_mw$fixed[4],2), collapse=";"))),
-  caption="<span style='font-size:200%'>Aggregated ATT of minimum wage on youth unemployment</span>"
+  caption="<span style='font-size:200%'>Aggregated ATT of minimum wage on youth unemployment</span>", digits=2
   )
 
 

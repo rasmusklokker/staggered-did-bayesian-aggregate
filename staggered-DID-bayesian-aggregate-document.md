@@ -177,7 +177,7 @@ knitr::kable(
              CI=c(paste(round(agg_CSA$overall.att-1.96*agg_CSA$overall.se,2), 
                         round(agg_CSA$overall.att+1.96*agg_CSA$overall.se,2), collapse=";"),
                   paste(round(sum_brm$fixed[3],2), round(sum_brm$fixed[4],2), collapse=";"))),
-  caption="<span style='font-size:200%'>Aggregated ATT of simulated data</span>"
+  caption="<span style='font-size:200%'>Aggregated ATT of simulated data</span>", digits=2
   
   
   )
@@ -187,10 +187,10 @@ knitr::kable(
 
 Table: <span style='font-size:200%'>Aggregated ATT of simulated data</span>
 
-|method   |      ATT|        SE|CI          |
-|:--------|--------:|---------:|:-----------|
-|CSA      | 22.46637| 0.0576607|22.35 22.58 |
-|bayesian | 22.57214| 0.0507905|22.47 22.67 |
+|method   |   ATT|   SE|CI          |
+|:--------|-----:|----:|:-----------|
+|CSA      | 22.47| 0.06|22.35 22.58 |
+|bayesian | 22.57| 0.05|22.47 22.67 |
 
 
 # Using real data
@@ -259,7 +259,7 @@ knitr::kable(
              CI=c(paste(round(agg_effects$overall.att-1.96*agg_effects$overall.se,2), 
                         round(agg_effects$overall.att+1.96*agg_effects$overall.se,2), collapse=";"),
                   paste(round(sum_brm_castle$fixed[3],2), round(sum_brm_castle$fixed[4],2), collapse=";"))),
-  caption="<span style='font-size:200%'>Aggregated ATT of Castle-doctrine on homicide rates</span>"
+  caption="<span style='font-size:200%'>Aggregated ATT of Castle-doctrine on homicide rates</span>", digits=2
   )
 ```
 
@@ -267,10 +267,10 @@ knitr::kable(
 
 Table: <span style='font-size:200%'>Aggregated ATT of Castle-doctrine on homicide rates</span>
 
-|method   |       ATT|        SE|CI        |
-|:--------|---------:|---------:|:---------|
-|CSA      | 0.1084475| 0.0374177|0.04 0.18 |
-|bayesian | 0.0795568| 0.0199254|0.04 0.12 |
+|method   |  ATT|   SE|CI        |
+|:--------|----:|----:|:---------|
+|CSA      | 0.11| 0.04|0.04 0.18 |
+|bayesian | 0.08| 0.02|0.04 0.12 |
 
 
 # more real data: Effect of minimum wage on youth employment
@@ -334,7 +334,7 @@ knitr::kable(
              CI=c(paste(round(agg_mw$overall.att-1.96*agg_mw$overall.se,2), 
                         round(agg_mw$overall.att+1.96*agg_mw$overall.se,2), collapse=";"),
                   paste(round(sum_brm_mw $fixed[3],2), round(sum_brm_mw$fixed[4],2), collapse=";"))),
-  caption="<span style='font-size:200%'>Aggregated ATT of minimum wage on youth unemployment</span>"
+  caption="<span style='font-size:200%'>Aggregated ATT of minimum wage on youth unemployment</span>", digits=2
   )
 ```
 
@@ -342,10 +342,10 @@ knitr::kable(
 
 Table: <span style='font-size:200%'>Aggregated ATT of minimum wage on youth unemployment</span>
 
-|method   |        ATT|        SE|CI          |
-|:--------|----------:|---------:|:-----------|
-|CSA      | -0.0310183| 0.0122481|-0.06 -0.01 |
-|bayesian | -0.0322365| 0.0111533|-0.05 -0.01 |
+|method   |   ATT|   SE|CI          |
+|:--------|-----:|----:|:-----------|
+|CSA      | -0.03| 0.01|-0.06 -0.01 |
+|bayesian | -0.03| 0.01|-0.05 -0.01 |
 
 
 # Why bayesian? Probing the posterior distribution

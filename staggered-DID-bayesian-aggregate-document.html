@@ -667,7 +667,7 @@ knitr::kable(
              CI=c(paste(round(agg_CSA$overall.att-1.96*agg_CSA$overall.se,2), 
                         round(agg_CSA$overall.att+1.96*agg_CSA$overall.se,2), collapse=&quot;;&quot;),
                   paste(round(sum_brm$fixed[3],2), round(sum_brm$fixed[4],2), collapse=&quot;;&quot;))),
-  caption=&quot;&lt;span style=&#39;font-size:200%&#39;&gt;Aggregated ATT of simulated data&lt;/span&gt;&quot;
+  caption=&quot;&lt;span style=&#39;font-size:200%&#39;&gt;Aggregated ATT of simulated data&lt;/span&gt;&quot;, digits=2
   
   
   )</code></pre>
@@ -685,14 +685,14 @@ data</span></caption>
 <tbody>
 <tr class="odd">
 <td align="left">CSA</td>
-<td align="right">22.46637</td>
-<td align="right">0.0576607</td>
+<td align="right">22.47</td>
+<td align="right">0.06</td>
 <td align="left">22.35 22.58</td>
 </tr>
 <tr class="even">
 <td align="left">bayesian</td>
-<td align="right">22.57214</td>
-<td align="right">0.0507905</td>
+<td align="right">22.57</td>
+<td align="right">0.05</td>
 <td align="left">22.47 22.67</td>
 </tr>
 </tbody>
@@ -761,7 +761,7 @@ sum_brm_castle &lt;- summary(m.brm_castle)</code></pre>
              CI=c(paste(round(agg_effects$overall.att-1.96*agg_effects$overall.se,2), 
                         round(agg_effects$overall.att+1.96*agg_effects$overall.se,2), collapse=&quot;;&quot;),
                   paste(round(sum_brm_castle$fixed[3],2), round(sum_brm_castle$fixed[4],2), collapse=&quot;;&quot;))),
-  caption=&quot;&lt;span style=&#39;font-size:200%&#39;&gt;Aggregated ATT of Castle-doctrine on homicide rates&lt;/span&gt;&quot;
+  caption=&quot;&lt;span style=&#39;font-size:200%&#39;&gt;Aggregated ATT of Castle-doctrine on homicide rates&lt;/span&gt;&quot;, digits=2
   )</code></pre>
 <table>
 <caption><span style="font-size:200%">Aggregated ATT of Castle-doctrine
@@ -777,14 +777,14 @@ on homicide rates</span></caption>
 <tbody>
 <tr class="odd">
 <td align="left">CSA</td>
-<td align="right">0.1084475</td>
-<td align="right">0.0374177</td>
+<td align="right">0.11</td>
+<td align="right">0.04</td>
 <td align="left">0.04 0.18</td>
 </tr>
 <tr class="even">
 <td align="left">bayesian</td>
-<td align="right">0.0795568</td>
-<td align="right">0.0199254</td>
+<td align="right">0.08</td>
+<td align="right">0.02</td>
 <td align="left">0.04 0.12</td>
 </tr>
 </tbody>
@@ -839,7 +839,7 @@ sum_brm_mw &lt;- summary(m.brm_mw)</code></pre>
              CI=c(paste(round(agg_mw$overall.att-1.96*agg_mw$overall.se,2), 
                         round(agg_mw$overall.att+1.96*agg_mw$overall.se,2), collapse=&quot;;&quot;),
                   paste(round(sum_brm_mw $fixed[3],2), round(sum_brm_mw$fixed[4],2), collapse=&quot;;&quot;))),
-  caption=&quot;&lt;span style=&#39;font-size:200%&#39;&gt;Aggregated ATT of minimum wage on youth unemployment&lt;/span&gt;&quot;
+  caption=&quot;&lt;span style=&#39;font-size:200%&#39;&gt;Aggregated ATT of minimum wage on youth unemployment&lt;/span&gt;&quot;, digits=2
   )</code></pre>
 <table>
 <caption><span style="font-size:200%">Aggregated ATT of minimum wage on
@@ -855,14 +855,14 @@ youth unemployment</span></caption>
 <tbody>
 <tr class="odd">
 <td align="left">CSA</td>
-<td align="right">-0.0310183</td>
-<td align="right">0.0122481</td>
+<td align="right">-0.03</td>
+<td align="right">0.01</td>
 <td align="left">-0.06 -0.01</td>
 </tr>
 <tr class="even">
 <td align="left">bayesian</td>
-<td align="right">-0.0322365</td>
-<td align="right">0.0111533</td>
+<td align="right">-0.03</td>
+<td align="right">0.01</td>
 <td align="left">-0.05 -0.01</td>
 </tr>
 </tbody>
