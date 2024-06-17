@@ -388,7 +388,7 @@ f <- ecdf(post.samples$b_Intercept)
 p
 ```
 
-![]([plot](https://github.com/rasmusklokker/staggered-did-bayesian-aggregate/blob/master/staggered-DID-bayesian-aggregate-document_files/figure-html/posterior%20plot-1.png))<!-- -->
+![]([plot](https://github.com/rasmusklokker/staggered-did-bayesian-aggregate/blob/master/staggered-DID-bayesian-aggregate-document_files/figure-html/posterior%20plot-1.png?raw=true "title"))<!-- -->
 
 
 
